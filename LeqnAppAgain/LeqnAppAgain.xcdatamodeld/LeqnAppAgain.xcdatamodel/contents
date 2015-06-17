@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="categoryId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="categoryToTasks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tasks" inverseName="tasksToCategory" inverseEntity="Tasks" syncable="YES"/>
+    </entity>
+    <entity name="Tasks" representedClassName="Tasks" syncable="YES">
+        <attribute name="taskId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taskName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tasksToCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="categoryToTasks" inverseEntity="Category" syncable="YES"/>
+    </entity>
+    <entity name="TimeSlot" representedClassName="TimeSlot" syncable="YES">
+        <attribute name="isLogged" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="slotToCategory" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Category" syncable="YES"/>
+    </entity>
+    <entity name="UserDetails" syncable="YES">
+        <attribute name="building" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mgrfname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mgrlname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="role" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="0" positionY="90" width="128" height="88"/>
+        <element name="Tasks" positionX="-225" positionY="218" width="128" height="88"/>
+        <element name="TimeSlot" positionX="-155" positionY="-36" width="128" height="75"/>
+        <element name="UserDetails" positionX="-297" positionY="-126" width="128" height="165"/>
+    </elements>
+</model>

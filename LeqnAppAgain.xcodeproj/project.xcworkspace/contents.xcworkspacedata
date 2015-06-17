@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../Tasks.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../Category.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../TimeSlot.swift">
+   </FileRef>
+   <FileRef
       location = "self:LeqnAppAgain.xcodeproj">
    </FileRef>
 </Workspace>

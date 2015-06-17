@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B21D02301B2657820026DC40 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21D022F1B2657820026DC40 /* UserDetails.swift */; };
+		B248182F1B311C050065E493 /* LeqnAppAgain.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B248182D1B311C050065E493 /* LeqnAppAgain.xcdatamodeld */; };
+		B24818311B31450D0065E493 /* OpenTimeLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24818301B31450D0065E493 /* OpenTimeLogController.swift */; };
+		B24818331B3145B40065E493 /* PrevTimesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24818321B3145B40065E493 /* PrevTimesController.swift */; };
 		B2BC8F541B25D20900A969E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BC8F531B25D20900A969E2 /* AppDelegate.swift */; };
 		B2BC8F561B25D20900A969E2 /* TimeLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BC8F551B25D20900A969E2 /* TimeLogViewController.swift */; };
 		B2BC8F581B25D20900A969E2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BC8F571B25D20900A969E2 /* ProfileViewController.swift */; };
@@ -35,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B21D022F1B2657820026DC40 /* UserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
+		B21D02621B2FBFF90026DC40 /* LeqnAppAgain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LeqnAppAgain.entitlements; sourceTree = "<group>"; };
+		B248182E1B311C050065E493 /* LeqnAppAgain.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LeqnAppAgain.xcdatamodel; sourceTree = "<group>"; };
+		B24818301B31450D0065E493 /* OpenTimeLogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenTimeLogController.swift; sourceTree = "<group>"; };
+		B24818321B3145B40065E493 /* PrevTimesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrevTimesController.swift; sourceTree = "<group>"; };
 		B2BC8F4E1B25D20900A969E2 /* LeqnAppAgain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeqnAppAgain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BC8F521B25D20900A969E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2BC8F531B25D20900A969E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B21D022E1B2636480026DC40 /* DataObjects */ = {
+			isa = PBXGroup;
+			children = (
+				B21D022F1B2657820026DC40 /* UserDetails.swift */,
+			);
+			name = DataObjects;
+			sourceTree = "<group>";
+		};
 		B2BC8F451B25D20900A969E2 = {
 			isa = PBXGroup;
 			children = (
@@ -95,15 +112,20 @@
 		B2BC8F501B25D20900A969E2 /* LeqnAppAgain */ = {
 			isa = PBXGroup;
 			children = (
+				B21D02621B2FBFF90026DC40 /* LeqnAppAgain.entitlements */,
+				B21D022E1B2636480026DC40 /* DataObjects */,
 				B2BC8F751B25D35F00A969E2 /* images */,
 				B2BC8F531B25D20900A969E2 /* AppDelegate.swift */,
 				B2BC8F551B25D20900A969E2 /* TimeLogViewController.swift */,
 				B2BC8F571B25D20900A969E2 /* ProfileViewController.swift */,
 				B2BC8F591B25D20900A969E2 /* Main.storyboard */,
+				B248182D1B311C050065E493 /* LeqnAppAgain.xcdatamodeld */,
 				B2BC8F5C1B25D20900A969E2 /* Images.xcassets */,
 				B2BC8F5E1B25D20900A969E2 /* LaunchScreen.xib */,
 				B2BC8F511B25D20900A969E2 /* Supporting Files */,
 				B2BC8F861B25D94000A969E2 /* SettingsViewController.swift */,
+				B24818301B31450D0065E493 /* OpenTimeLogController.swift */,
+				B24818321B3145B40065E493 /* PrevTimesController.swift */,
 			);
 			path = LeqnAppAgain;
 			sourceTree = "<group>";
@@ -197,6 +219,14 @@
 					B2BC8F4D1B25D20900A969E2 = {
 						CreatedOnToolsVersion = 6.3.2;
 						DevelopmentTeam = 3JZPBGBYH8;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					B2BC8F641B25D20900A969E2 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -258,7 +288,11 @@
 				B2BC8F581B25D20900A969E2 /* ProfileViewController.swift in Sources */,
 				B2BC8F541B25D20900A969E2 /* AppDelegate.swift in Sources */,
 				B2BC8F561B25D20900A969E2 /* TimeLogViewController.swift in Sources */,
+				B248182F1B311C050065E493 /* LeqnAppAgain.xcdatamodeld in Sources */,
 				B2BC8F871B25D94000A969E2 /* SettingsViewController.swift in Sources */,
+				B21D02301B2657820026DC40 /* UserDetails.swift in Sources */,
+				B24818311B31450D0065E493 /* OpenTimeLogController.swift in Sources */,
+				B24818331B3145B40065E493 /* PrevTimesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,9 +423,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LeqnAppAgain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -402,9 +438,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LeqnAppAgain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -474,6 +512,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B248182D1B311C050065E493 /* LeqnAppAgain.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B248182E1B311C050065E493 /* LeqnAppAgain.xcdatamodel */,
+			);
+			currentVersion = B248182E1B311C050065E493 /* LeqnAppAgain.xcdatamodel */;
+			path = LeqnAppAgain.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B2BC8F461B25D20900A969E2 /* Project object */;
 }
